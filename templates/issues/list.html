@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Issues{% endblock title %}
+
+{% block content %}
+<h1>Issues</h1>
+<p>
+<ul>
+    {% for post in posts_list %}
+    <a href="{% url 'detail' issue.id %}">
+        <li>{{ issue.title }}
+    </a>
+    </li>
+    {% endfor %}
+</ul>
+</p>
+{% endblock content %}
