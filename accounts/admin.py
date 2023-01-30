@@ -13,6 +13,7 @@ class CustomUserAdmin(UserAdmin):
         'is_staff', 'role', 'team',
     ]
     add_form = CustomUserCreationForm
+    form = CustomUserChangeForm
     add_fieldsets = UserAdmin.add_fieldsets + (
         (None, {'fields': ('role', 'team')}),
     )

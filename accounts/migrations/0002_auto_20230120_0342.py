@@ -5,7 +5,7 @@ from django.db import migrations
 
 def populate_roles(apps, schemaeditor):
     roles = {
-        'Developer': 'SOmeone who develops software',
+        'Developer': 'Someone who develops software',
         'Scrum Master': 'The coach',
         'Product Owner': 'The person responsible for managing requirements'
     }

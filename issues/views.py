@@ -26,7 +26,7 @@ class IssueListView(LoginRequiredMixin, ListView):
                 status=to_do_status).order_by('created_on').reverse()
             context['in_p_issues'] = Issue.objects.filter(
                 team=team
-            ).filter(status=done_status).order_by('created_on').reverse()
+            ).filter(status=in_p_status).order_by('created_on').reverse()
             context['done_issues'] = Issue.objects.filter(
                 team=team
             ).filter(status=done_status).order_by('created_on.').reverse()

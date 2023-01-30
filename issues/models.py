@@ -10,7 +10,7 @@ class Status(models.Model):
     description = models.TextField()
 
     def __str__(self):
-        return self.title
+        return self.name
 
 
 class Issue(models.Model):
@@ -38,4 +38,4 @@ class Issue(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('issus_detail', args=[self.id])
+        return reverse('issue_detail', args=[self.id])

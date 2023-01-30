@@ -7,7 +7,7 @@
 <p>
 <ul>
     {% for post in posts_list %}
-    <a href="{% url 'detail' issue.id %}">
+    <a href="{% url 'issue_detail' issue.id %}">
         <li>{{ issue.title }}
     </a>
     </li>

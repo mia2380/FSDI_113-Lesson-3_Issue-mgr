@@ -1,0 +1,30 @@
+h1 {
+  color: rgb(124, 84, 243);
+}
+
+body {
+  background-color: rgb(65, 63, 63);
+  color: #fff;
+}
+
+.btn {
+  background-color: rgb(124, 84, 243);
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: rgb(182, 231, 5);
+  color: rgb(156, 6, 6);
+}
+
+.nav-link {
+  color: black;
+  margin: 0 10px;
+}
+form {
+  margin: 0 10px;
+  border: #fff 5px dotted;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
